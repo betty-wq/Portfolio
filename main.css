@@ -175,3 +175,10 @@ html {
 .role{
     color: black;
 }
+.add > a {
+  text-decoration: none;
+  color: black;
+}
+.add > a:hover {
+  color: blue;
+}
