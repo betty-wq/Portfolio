@@ -36,14 +36,116 @@ html {
       background-color: rgb(9, 87, 39);
       color: white;
   }
+  #im{
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+  }
 
   .hw {
-    color: rgb(11, 157, 241);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    color: rgb(14, 125, 189);
+    max-width: 40ch;
+    /* height: 100%; */
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+    animation: fade-in 5s infinite;
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(19){
+    animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
   #projects {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 70px;
     padding-bottom: 40px;
     background: white;
@@ -72,7 +174,12 @@ html {
     height: auto;
     box-shadow: 0px 10px 10px green;
   }
-
+.project-title:hover{
+  -webkit-filter: hue-rotate(36deg);
+    filter: hue-rotate(36deg);
+    -webkit-transform: translate(2.5%, 10%);
+    transform: translate(2.5%, 10%);
+}
   img {
     width: 400px;
     height: 100%;
@@ -111,15 +218,17 @@ html {
   #welcome-section {
     display: flex;
     flex-direction: column;
-    height: 100vH;
+    height: 120vh;
     background-color: rgb(176, 243, 217);
     color: white;
-    /* background-image: linear-gradient(black grey); */
     align-items: center;
     justify-content: center;
     
   }
-
+.im{
+  width: 700px;
+  height: 700px;
+}
   h2 {
       text-align: center;
       color: white;
@@ -131,14 +240,22 @@ html {
     width: 40%;
     margin: auto;
     width: 60%;
-    border: 3px solid #73AD21;
+    border: 1px solid #73AD21;
     padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgb(238, 179, 139);
 }
 .aboutimg{
-    border-radius: 50%;
-    height: 350px;
+    /* border-radius: 100%; */
+    height: 200px;
+    width: 200px;
+    padding-left: 30%;
 }
-
+.ab1{
+  color: rgb(80, 77, 133);
+  text-shadow: none;
+}
 .skill{
   color: white;
   font-size: 20px;
@@ -194,3 +311,16 @@ html {
 .add > a:hover {
   color: blue;
 }
+.skill{
+  background-color: rgb(248, 242, 242);
+  padding: 3% 25%;
+}
+.skill>i{
+  margin: 40px;
+  border-bottom: 20%;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  
+}
+
